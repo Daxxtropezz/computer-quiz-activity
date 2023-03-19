@@ -1,0 +1,147 @@
+body {
+    font: 14px Arial, Serif;
+    background-image: linear-gradient(120deg, rgb(142, 2, 235), rgb(170, 53, 53), rgba(241, 144, 79, 0.8), rgb(245, 196, 164));
+    /* background-color: rgba(53, 28, 197, 0.795); */
+    padding: 0;
+    margin: 0;
+}
+
+#outerlayer {
+    background-image: -webkit-radial-gradient(rgb(192, 80, 186), rgb(22, 18, 252));
+    margin: 25px 350px 25px 350px;
+    /*up right down left*/
+    border: 5px solid #000;
+    border-image: linear-gradient(to bottom right, #63a8f7 0%, #2c90fc 25%, #5833fd 50%, #cc0cb2 75%, #fd80c3 100%);
+    border-image-slice: 1;
+}
+
+
+/*START OF RADIO BUTTON*/
+
+.container {
+    top: 50%;
+    Left: 50%;
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+label {
+    position: relative;
+    color: #fcfcfc;
+    background-color: #050c0877;
+    font: 14px 'Copperplate', Serif;
+    font-size: 15px;
+    border: 3px solid #0e0c96;
+    box-shadow: inset 0 0 0 0 #FFF;
+    transition: ease-out 0.8s;
+    border-radius: 23px;
+    padding: 6px 25px;
+    display: block;
+    margin-right: 14%;
+    cursor: pointer;
+}
+
+label:hover {
+    background: rgb(79, 14, 178);
+    /* box-shadow: inset 0px 35px 25px 0 rgb(41, 128, 228), inset 0 70px 15px 0px rgb(103, 226, 210), inset 0 100px 5px 0px #fff; */
+    box-shadow: 0 0 12px 12px rgb(79, 14, 178), inset 0 0 3px 2px rgb(123, 45, 240);
+    cursor: pointer;
+    color: rgb(167, 108, 255);
+}
+
+label:before {
+    border-radius: 50%;
+    margin-right: -10px;
+}
+
+input[type="radio"]:checked+label {
+    background-color: rgb(153, 92, 245);
+    color: white;
+}
+
+
+/*END OF RADIO BUTTON*/
+
+#buttons {
+    font: 14px 'Copperplate', Fantasy;
+    color: rgb(228, 13, 174);
+    padding: 3px 55px;
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 16px;
+    border: 3px solid #221b2ee0;
+    box-shadow: inset 0 0 0 0 #0c68f1;
+    background-image: -webkit-radial-gradient(rgba(192, 80, 186, 0.616), rgba(22, 18, 252, 0.616));
+    transition: ease-out 0.6s;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+#buttons:hover {
+    box-shadow: inset 300px 0 0 0 #0c68f1;
+    /* box-shadow: 10px 5px 5px red; */
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+#button_div {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+#questionnaire {
+    width: 500px;
+    margin: 0 auto;
+}
+
+h1 {
+    background-color: rgba(85, 123, 248, 0.26);
+    text-align: center;
+    margin: 25px 0;
+    padding: 23px;
+    border: 3px solid #050c08;
+    border-radius: 23px;
+    font: 25px 'Copperplate', Fantasy;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+#quiz input {
+    vertical-align: middle;
+}
+
+#quiz ol li {
+    margin: 0 0 20px 0;
+}
+
+#quiz ol li div {
+    padding: 3px 0;
+}
+
+#quiz h3 {
+    font: 15px 'Copperplate', Fantasy;
+    font-size: 17px;
+    margin: 0 0 5px 0;
+    /* border: 3px double #000; */
+    color: rgb(159, 165, 253);
+}
+
+#results {
+    font: 54px 'Copperplate', Fantasy;
+    color: white;
+    text-align: center;
+    padding: 35px;
+    /* background-color: rgb(0, 0, 0); */
+    border-radius: 16px;
+    border: 3px solid #000;
+    border-image: #000;
+    box-shadow: inset 0 0 0 0 #0c68f1;
+    background-image: -webkit-radial-gradient(rgb(192, 80, 186), rgb(22, 18, 252));
+    transition: ease-out 0.6s;
+    font-size: 2rem;
+    margin: 1rem;
+    letter-spacing: 3px;
+}
